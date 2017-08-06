@@ -2,13 +2,29 @@
 
 <head>
   <title>leesnhyun.github.io</title>
+  <meta charset="utf-8">
+  
   <script type="text/javascript">
     location.href = '/blog';
+    
+    window.onload = function(){
+      var btn = document.getElementById('btn');
+      btn.onclick = function(e){
+        e.preventDefault();
+        location.href = '/blog';
+      }
+    }
+    
   </script>
 </head>
 
 <body>
-
+   
+  <section>
+    <p>자동으로 이동하지 않는 경우 아래버튼을 눌러 이동해주세요.</p>
+    <p><input id="btn" type="button" value="이동"/></p>
+  </section>
+  
 </body>
 
 </html>
